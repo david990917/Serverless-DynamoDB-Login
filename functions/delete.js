@@ -25,5 +25,7 @@ exports.delete = async (userInfo) => {
     if (!deleteUserResponse) {
         return util.buildResponse(503, { message: "server error" });
     }
-    return util.buildResponse(200, { username: username });
+    return util.buildResponse(200, {
+        username: username, message: "Successfully delete the user"
+    });
 }
