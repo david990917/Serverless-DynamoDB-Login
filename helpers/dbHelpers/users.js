@@ -68,3 +68,25 @@ exports.deleteUser = async (user) => {
             }
         );
 };
+
+exports.updateUser = async (user) => {
+    const params = {
+        TableName: userTable,
+        Key: {
+            username: user.username,
+        },
+        Item: user,
+    };
+
+    return await dynamoDB
+        .update(params)
+        .promise()
+        .then(
+            (response) => {
+                return true;
+            },
+            (error) => {
+                console.log("Error updating user", error);
+            }
+        );
+};
