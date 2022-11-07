@@ -1,0 +1,24 @@
+{
+  "name": "serverless-dynamodb-login",
+  "version": "1.0.0",
+  "description": "Login System Design with Serverless and DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david990917/Serverless-DynamoDB-Login.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david990917/Serverless-DynamoDB-Login/issues"
+  },
+  "homepage": "https://github.com/david990917/Serverless-DynamoDB-Login#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1248.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
