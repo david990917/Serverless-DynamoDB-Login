@@ -47,3 +47,24 @@ exports.saveUser = async (user) => {
             }
         );
 };
+
+exports.deleteUser = async (user) => {
+    const params = {
+        TableName: userTable,
+        Key: {
+            username: user.username,
+        },
+    };
+
+    return await dynamoDB
+        .delete(params)
+        .promise()
+        .then(
+            (response) => {
+                return true;
+            },
+            (error) => {
+                console.log("Error deleting user", error);
+            }
+        );
+};
