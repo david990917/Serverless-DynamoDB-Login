@@ -17,6 +17,8 @@ In this project, we will use **API Gateway**, **Lambda,** and **DynamoDB**.
 
 ![gateway-api](README/gateway-api.png)
 
+![current-api](README/current-api.png)
+
 ### Functions Demo
 
 ##### /register
