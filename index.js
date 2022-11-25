@@ -27,7 +27,7 @@ exports.handler = async (event) => {
         case httpMethod === "POST" && resource === verifyPath:
             response = await verifyService.verify(requestBody);
             break;
-        case httpMethod === "POST" && resource === deletePath:
+        case httpMethod === "DELETE" && resource === deletePath:
             response = await deleteService.delete(requestBody);
             break;
         case httpMethod === "POST" && resource === updatePath:
