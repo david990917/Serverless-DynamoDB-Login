@@ -7,7 +7,10 @@ In this project, we will use **API Gateway**, **Lambda,** and **DynamoDB**.
 
 - Programming Language: JavaScript
 
-- The API version of `aws-sdk` is `v2`
+- The API version of `aws-sdk` is `v2` 
+
+  [Document - AWS SDK v2](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/welcome.html)
+
 - **Postman** is used to test the api
 
 ![img](README/arch.png)

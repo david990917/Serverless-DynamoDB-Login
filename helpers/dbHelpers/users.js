@@ -90,3 +90,19 @@ exports.updateUser = async (user) => {
             }
         );
 };
+
+exports.scanUser = async () => {
+    const params = {
+        TableName: userTable,
+    };
+
+    try {
+        const data = await dynamoDB.scan(params).promise();
+        return data;
+    }
+    catch (error) {
+        return error;
+    }
+
+
+};
